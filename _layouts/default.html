@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>dreu &middot; sreya aluri</title>
+
+    {% include meta.html %}
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/40071ea8f5.js" crossorigin="anonymous"></script>
+  </head>
+
+  <!-- <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a> click for home--> 
+  <body>
+    <div class="container">
+      <h1 class="page-title">{{ page.title }}</a></h1>
+      {{ content }}
+      <!-- <h4>click <a href="{{ site.baseurl }}/">here</a> to go back home.</h4> uncomment after personal website is up.  -->
+      <!-- <h4>click <a href="{{ site.baseurl }}/{% if page.prev %}{{ page.prev }}{% endif %}">here</a> to go back{% if page.prev==null %} home{% endif %}.</h4> -->
+    </div>
+  </body>
+</html>

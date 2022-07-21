@@ -1,0 +1,45 @@
+//
+// IMPORTS
+//
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Quicksand:wght@300;400;600&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand:wght@400;500&display=swap');
+
+
+//
+// VARIABLES
+//
+
+// Primary Colors
+$darkerPurple: #341735;
+$darkPurple: #4D224E;
+$purple: #6E336C;
+$lightPurple: #956DA3;
+$lighterPurple: #CCB7DA;
+
+// Secondary Colors
+$yellow: #FFC82E;
+$pink: #F0769C;
+$blue: #AFE6FF;
+$green: #85C17F;
+
+// Grays
+$black: #000;
+$darkerGray: #111822;
+$darkGray: #364B68;
+$gray: #506D95;
+$lightGray: #ACBCD2;
+$lighterGray: #DEE4ED;
+$white: #F5F7FA;
+
+// Font stacks
+$quicksand: 'Quicksand', 'Open Sans', sans-serif;
+$opensans: 'Open Sans', sans-serif;
+
+// Mobile breakpoints
+@mixin mobile {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}

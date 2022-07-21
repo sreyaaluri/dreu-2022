@@ -1,0 +1,59 @@
+---
+layout: default
+title: Summer 2021 CRA DREU Project
+---
+
+<div class="section-heading"><i class="fas fa-square-full"></i> about me</div>
+<div class="section">
+  I am Sreya Aluri, an international student at the University of Richmond. I am a rising senior and I intend to graduate in May of 2022 with a Bachelor of Science degree in Computer Science and Physics. 
+  You can <a href="mailto:sreyaaluri@gmail.com">contact me via email</a>.
+  <!-- You can know more about me through <a href="https://sreyaaluri.github.io">my website</a>. uncomment after personal website is done-->
+</div>
+
+<div class="section-heading"><i class="fas fa-square-full"></i> about my mentor</div>
+<div class="section">
+  I worked on this research project under the guidance of Dr. Zhe Jiang, Assistant Professor of Computer Science at the University of Alabama, whose research area is interdisciplinary artificial intelligence.
+  To know more about Dr. Jiang you can visit <a href="https://www.jiangteam.org/index.html" target="_blank" rel="noopener noreferrer">his website</a>.
+</div>
+
+<div class="section-heading"><i class="fas fa-square-full"></i> research overview</div>
+<div class="section">
+  Accurate and detailed cartographic representations of hydrologic streamlines are critical in various scientific 
+  domains, such as assessing the quantity and quality of present and future water resources, modeling climate 
+  changes, evaluating agricultural suitability, mapping flood inundation, and monitoring environmental changes. 
+  My research pertains to training and testing a convolutional neural network that can be used for the detection of
+  fine-scale hydrological streamlines.
+</div>
+
+
+<div class="section-heading"><i class="fas fa-square-full"></i> blog</div>
+<div class="section">
+  <!-- I have documented my research experience in weekly blogs. <br> -->
+  {% for post in site.posts reversed %}
+  {% if post.finished %}
+    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> /
+  {% else %}
+    {{post.title}} /
+  {% endif %}
+  {% endfor %}
+</div>
+
+<div class="section-heading"><i class="fas fa-square-full"></i> <a href="./files/Research Final Report.pdf">final report</a></div>
+</div>
+
+<!-- <div></div><i class="fas fa-square-full"></i><h3>intro</h3>
+
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div> -->
