@@ -2,22 +2,45 @@
 layout: default
 title: Summer 2022 CRA DREU Project
 ---
+<div class = "about-me desktop">
+  <div style="margin-right:32px;">
+    <div class="section-heading"><i class="fas fa-square-full"></i> about me</div>
+    <div class="section"> 
+        I am Sreya Aluri, a research intern at the <a href="https://aabl.cs.tufts.edu/index.html">Assistive Agent Behavior and Learning Lab</a>. I graduated from the University of Richmond in May of 2022 with a Bachelor of Science in Computer Science
+        and a minor in Physics. You can find more information about me on <a href="https://www.linkedin.com/in/sreya-aluri-2b9388197/">my linkedin</a> and feel free to <a href="mailto:sreyaaluri@gmail.com">contact me via email</a>.
+    </div>
+  </div>
+  <img src="images/headshot.png" alt="Headshot">
+</div>
 
-<div class="section-heading"><i class="fas fa-square-full"></i> about me</div>
-<div class="section">
-  TODO I am Sreya Aluri, an international student at the University of Richmond. I am a rising senior and I intend to graduate in May of 2022 with a Bachelor of Science degree in Computer Science and Physics. 
-  You can <a href="mailto:sreyaaluri@gmail.com">contact me via email</a>.
-  <!-- You can know more about me through <a href="https://sreyaaluri.github.io">my website</a>. uncomment after personal website is done-->
+<!-- hacky way of different image positioning on non-desktop devices -->
+<div class = "not-desktop">
+  <div class="section-heading"><i class="fas fa-square-full"></i> about me</div>
+  <img src="images/headshot.png" alt="Headshot" style="margin-bottom: 32px;">
+  <div class="section"> 
+      I am Sreya Aluri, a research intern at the <a href="https://aabl.cs.tufts.edu/index.html">Assistive Agent Behavior and Learning Lab</a>. I graduated from the University of Richmond in May of 2022 with a Bachelor of Science in Computer Science
+      and a minor in Physics. You can find more information about me on <a href="https://www.linkedin.com/in/sreya-aluri-2b9388197/">my linkedin</a> and feel free to <a href="mailto:sreyaaluri@gmail.com">contact me via email</a>.
+  </div>
 </div>
 
 <div class="section-heading"><i class="fas fa-square-full"></i> about my mentor</div>
 <div class="section">
-  TODO I worked on this research project under the guidance of Dr. Elaine Short.
+  I worked on this research project under the guidance of Dr. Elaine Short. Her research focuses on building algorithms that 
+  enable robust assistive human-robot interaction in schools, homes, crowds, and other natural environments. 
+  You can visit <a href="https://eshort.github.io/"> Dr. Short's website</a> to know more about her.
 </div>
 
 <div class="section-heading"><i class="fas fa-square-full"></i> research overview</div>
 <div class="section">
-  TODO
+  By analysing elevator traffic patterns, elevators are equipped with algorithms that bring them 
+  to the most requested floors (Eg: the floor with lobby in a hotel) even when no one has pressed a button. This simple
+  act that involves taking data-driven predictive action, saves a lot of waiting time for the humans. Similarly, giving 
+  a robot helpful information to begin computation and motion planning by predicting the human's intention can reduce a 
+  human's wait time. Intent is communicated verbally to the robot usually once the human has made an explicit decisions.
+  To give the robot a head-start before the explicit communication, we can look instead into non-verbal cues. Humans have
+  multiple modes of non-verbal communication including facial expressions, body posture, gestures, eye contact, use of space,
+  tone of voice, and physical touch. In this research project, we specifically look into how human eye gaze can be analysed 
+  for intent communication in human robot interactions.
 </div>
 
 
@@ -35,20 +58,3 @@ title: Summer 2022 CRA DREU Project
 
 <div class="section-heading"><i class="fas fa-square-full"></i> <!--<a href="./files/Research Final Report.pdf">-->final report</div>
 </div>
-
-<!-- <div></div><i class="fas fa-square-full"></i><h3>intro</h3>
-
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div> -->

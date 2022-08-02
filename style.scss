@@ -19,9 +19,10 @@ html {
 }
 
 body {
-	background: $purple;
+	background: $white;
   font: 300 20px $quicksand;
-  color: $white;
+  color: $earth-red;
+  font-weight: 400;
 }
 
 .container {
@@ -62,11 +63,11 @@ p {
 }
 
 a {
-  color: $yellow;
+  color: $earth-green;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $pink;
+    color: $yellow;
   }
 }
 
@@ -100,7 +101,8 @@ strong, b {
 }
 
 img {
-  max-width: 100%;
+  max-width: 200px;
+  max-height: 205px;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -159,7 +161,7 @@ img {
 
 .page-title {
   font-weight: 400;
-  color: $white;
+  color: $earth-red;
   margin-bottom: 32px;
   @include mobile {
     font-size: 30px;
@@ -187,5 +189,27 @@ img {
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
+  }
+}
+
+/*********************/
+/*   MEDIA / RULES   */
+/*********************/
+$breakpoint-tablet: 951px;
+@media (max-width: $breakpoint-tablet) {
+  .not-desktop {
+    display: initial;
+  }
+  .desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .not-desktop {
+    display: none;
+  }
+  .desktop {
+    display: flex;
   }
 }
